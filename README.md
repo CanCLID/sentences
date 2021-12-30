@@ -5,25 +5,25 @@
 短句語料喺 NLP 可以有好多種用途，包括但唔限於：
 
 1. 詞性標註 POS tagging
-1. 機械翻譯 Machine Translation
-1. 情感分析 Sentiment Analysis
-1. 命名實體識別 Name Entity Recognition
-1. 傾偈機械人 Chatbot
-1. 語音識別 ASR
-1. 語音合成 TTS
-1. 錯別字改正 Misspelling Correction
+2. 機械翻譯 Machine Translation
+3. 情感分析 Sentiment Analysis
+4. 命名實體識別 Name Entity Recognition
+5. 傾偈機械人 Chatbot
+6. 語音識別 ASR
+7. 語音合成 TTS
+8. 錯別字改正 Misspelling Correction
 
 考慮到有咁多用途，蒐集句子嗰陣需要儘可能保留數據源嘅信息，包括但唔限於：
 
 1. 粵語片區（使唔使區分到地點，例如廣府片區分廣州同香港）
-1. 句子提供人性別、年齡段
-1. 用於 Chatbot 嘅句子可能要記埋使用場景，而且要區分對話段落
+2. 句子提供人性別、年齡段
+3. 用於 Chatbot 嘅句子可能要記埋使用場景，而且要區分對話段落
 
 喺蒐集數據嗰陣，要考慮以下問題：
 
 1. 因爲語料有可能會用嚟做錯別字改正，所以之後可以專門分出一份錯別字語料，入面全部都係錯別字。格式另作討論，可參考[GitHub Typo Corpus](https://github.com/mhagiwara/github-typo-corpus)
-1. 有錯別字就要有正字，我哋要確定一套正字法，而且要考慮埋唔同片區
-1. 對於 TTS 訓練數據，需要一份比較規範性（prescriptive）、純正嘅語料，所以我哋需要確定一套專用於 TTS 嘅粵語標準語
+2. 有錯別字就要有正字，我哋要確定一套正字法，而且要考慮埋唔同片區
+3. 對於 TTS 訓練數據，需要一份比較規範性（prescriptive）、純正嘅語料，所以我哋需要確定一套專用於 TTS 嘅粵語標準語
 
 ## 數據格式
 
@@ -46,11 +46,11 @@
 目前抌落去 common voice 嘅句子都要符合以下規範：
 
 1. 字形上統一使用 OpenCC 字形
-1. 用字符合標準粵文用字，語氣詞用字參考 https://jyutping.org/blog/particles/
+2. 用字符合標準粵文用字，語氣詞用字參考 https://jyutping.org/blog/particles/
    - 例如 _on9 仔唔好亂 up 嘢_ 應該改成 _戇鳩仔唔好亂噏嘢_
-1. 句子唔應該太長，儘量保持 30 個字以內
-1. 儘量以標準粵語（廣州話）為語體，可以加入少量其他片區嘅粵語，但係要保證用字一致。
-1. 儘量少用中英夾雜嘅句子，例如：
+3. 句子唔應該太長，儘量保持 30 個字以內
+4. 儘量以標準粵語（廣州話）為語體，可以加入少量其他片區嘅粵語，但係要保證用字一致。
+5. 儘量少用中英夾雜嘅句子，例如：
    - 可以接受嘅中英夾雜嘅句子：我喺 Facebook 上面開個咗新帖講嘢
    - 唔可以接受嘅中英夾雜嘅誒句子：我喺 Facebook 上面 send 咗個新 post 講嘢
 
