@@ -41,7 +41,7 @@
 
 ## Common Voice 句子收集
 
-目前為咗儘快開始 Common Voice 嘅句子收集過程，唔理啲句子嘅整理，直接抌落去個收集器啓動項目先。
+目前為咗儘快開始 Common Voice 嘅句子收集過程，唔理啲句子嘅整理，直接抌落去個收集器啓動項目先。所有通過審核嘅句子都會放喺呢度 https://github.com/common-voice/common-voice/blob/main/server/data/yue/sentence-collector.txt
 
 目前抌落去 common voice 嘅句子都要符合以下規範：
 
