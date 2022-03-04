@@ -1,12 +1,12 @@
 ## Common Voice 句子收集
 
-[STATISTICS](https://commonvoice.mozilla.org/sentence-collector/#/yue/stats)
-
-所有通過審核嘅句子都會放喺呢度 [common-voice/server/data/yue/sentence-collector.txt](https://github.com/common-voice/common-voice/blob/main/server/data/yue/sentence-collector.txt)
+- 粵語版首頁：[commonvoice.mozilla.org/yue](https://commonvoice.mozilla.org/yue)
+- 句子收集器統計：[STATISTICS](https://commonvoice.mozilla.org/sentence-collector/#/yue/stats)
+- 所有通過審核嘅句子：[common-voice/server/data/yue/sentence-collector.txt](https://github.com/common-voice/common-voice/blob/main/server/data/yue/sentence-collector.txt)
 
 目前抌落去 common voice 嘅句子都要符合以下規範：
 
-1. 字形上統一使用 OpenCC 字形
+1. 字形上無需統一，並唔需要 OpenCC 字形
 2. 用字符合標準粵文用字，語氣詞用字參考 https://jyutping.org/blog/particles/
    - 例如 _on9 仔唔好亂 up 嘢_ 應該改成 _戇鳩仔唔好亂噏嘢_
 3. 句子唔應該太長，儘量保持 30 個字以內
